@@ -1,0 +1,16 @@
+# Local virtualenv (uv)
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.ruff_cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Generated artifacts: results, logs, models, videos
+results/
+logs/
+models/
+videos/
