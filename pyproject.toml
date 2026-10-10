@@ -19,9 +19,6 @@ dependencies = [
     "nbclient",
 ]
 
-[project.scripts]
-dqn-frogger = "dqn_frogger:main"
-
 [tool.uv.sources]
 torch = { index = "pytorch-cpu" }
 
