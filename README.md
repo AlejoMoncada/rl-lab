@@ -109,8 +109,18 @@ comprobando los artefactos, la configuración y las semillas held-out compartida
 
 - Se ha ejecutado el **smoke** (`WALKER_SMOKE=1`), que verifica el pipeline de punta a
   punta.
-- El entrenamiento completo de **1 000 000 pasos** está **pendiente**. Hasta que se
-  ejecute, no hay resultados de aprendizaje que reportar.
+- Se ejecutó la corrida completa de **1 000 000 pasos** el 2026-10-13 (~23 min de
+  entrenamiento en CPU, semilla 2026, 3163 episodios de entrenamiento).
+
+Resultados (20 episodios de evaluación, semillas 10000–10019, retorno crudo):
+
+| Política  | Retorno medio ± desv. | Largo medio ± desv. |
+|-----------|-----------------------|---------------------|
+| Aleatoria | −0.57 ± 5.59          | 19.7 ± 5.9          |
+| PPO       | 4743.5 ± 76.4         | 997.0 ± 13.1        |
+
+- Los artefactos se generan localmente bajo `results/walker_ppo/` y no están versionados
+  en git.
 
 ## Referencias
 

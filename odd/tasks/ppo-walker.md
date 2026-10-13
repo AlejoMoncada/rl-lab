@@ -23,7 +23,7 @@ Objective: replace the Frogger PPO deliverable with a reproducible SB3 PPO exper
 | T1b | S1, S2 | delegated (Haiku): walker_rl, shapes (17,)/(6,) | done: 8 walker + 21 frogger tests OK | 9cc960c |
 | T2 | S3–S9 | delegated (Haiku) | done: 4 notebook tests OK (smoke ~40 s) | see git log |
 | T3 | S10 | delegated (Haiku) | done | see git log |
-| T4 | S3–S5 full 1M run | delegated (Haiku), needs user go-ahead (long CPU run) | pending | |
+| T4 | S3–S5 full 1M run | delegated (Haiku), needs user go-ahead (long CPU run) | done: PPO 4743.5 ± 76.4 vs random −0.57 ± 5.59 (20 eps) | |
 
 ## Log
 
@@ -31,3 +31,4 @@ Objective: replace the Frogger PPO deliverable with a reproducible SB3 PPO exper
 - L2 (2026-10-13, user): "Lunar lander lo vimos en clase me gustaria algo que quizas sea mas un reto [...] tambein Cartpole lo vimos en otor taller" → Walker2d-v5 chosen.
 - L3 (2026-10-13, user): "Receurda solo orquesta Haiku para todo lo demás" → all units delegated to Haiku workers.
 - L4 (2026-10-13, user): "Ok entonces Walker, o una de la versinoes de Humanoid" → Walker2d-v5 chosen (Humanoid needs far more than 1M steps with PPO; paper shows it separately in Roboschool). FrozenLake and trading rejected: not control envs; trading belongs to the final project.
+- L5 (2026-10-13): Full 1M run finished in ~23 min CPU (exit 0); results recorded in notebook interpretation cell and README.
