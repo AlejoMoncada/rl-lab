@@ -47,7 +47,7 @@ from nbclient import NotebookClient
 from PIL import Image
 
 # ---------------------------------------------------------------------------
-# Project locations (this file lives in ppo-frogger/tests/)
+# Project locations (this file lives in rl-lab/tests/)
 # ---------------------------------------------------------------------------
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent

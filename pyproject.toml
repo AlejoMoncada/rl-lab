@@ -1,7 +1,7 @@
 [project]
-name = "ppo-frogger"
+name = "rl-lab"
 version = "0.1.0"
-description = "PPO en ALE/Frogger-v5 (Gymnasium Atari): entorno, evaluacion y helper testable para el notebook educativo"
+description = "Laboratorio de aprendizaje por refuerzo: PPO en Walker2d-v5 (MuJoCo) y experimentos previos en Frogger (ALE)"
 requires-python = ">=3.11,<3.14"
 dependencies = [
     "ale-py==0.12.1",  # newest available on PyPI; bundles the ROMs inside the wheel
