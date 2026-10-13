@@ -19,9 +19,9 @@ Objective: replace the Frogger PPO deliverable with a reproducible SB3 PPO exper
 
 | ID | Specs | Route | Status | Commit |
 |---|---|---|---|---|
-| T1 | S1, S2 | delegated (Haiku) | done for Hopper (8 tests OK, Frogger 21 OK) | uncommitted |
-| T1b | S1, S2 | delegated (Haiku): rename helper+tests to walker_rl, Walker2d-v5 shapes (17,) obs, (6,) act | pending | |
-| T2 | S3–S9 | delegated (Haiku, user instruction) | pending | |
+| T1 | S1, S2 | delegated (Haiku) | done (superseded by T1b) | 9cc960c |
+| T1b | S1, S2 | delegated (Haiku): walker_rl, shapes (17,)/(6,) | done: 8 walker + 21 frogger tests OK | 9cc960c |
+| T2 | S3–S9 | delegated (Haiku) | done: 4 notebook tests OK (smoke ~40 s) | see git log |
 | T3 | S10 | delegated (Haiku, user instruction) | pending | |
 | T4 | S3–S5 full 1M run | delegated (Haiku), needs user go-ahead (long CPU run) | pending | |
 
