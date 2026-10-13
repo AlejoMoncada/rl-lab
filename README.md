@@ -119,8 +119,9 @@ Resultados (20 episodios de evaluación, semillas 10000–10019, retorno crudo):
 | Aleatoria | −0.57 ± 5.59          | 19.7 ± 5.9          |
 | PPO       | 4743.5 ± 76.4         | 997.0 ± 13.1        |
 
-- Los artefactos se generan localmente bajo `results/walker_ppo/` y no están versionados
-  en git.
+- El notebook ejecutado de esta corrida (con la curva y las tablas) está versionado en
+  `results/walker_ppo/ppo_walker_executed.ipynb`. El resto de artefactos (modelo, GIF,
+  CSV) se generan localmente bajo `results/walker_ppo/` y no están en git.
 
 ## Referencias
 
