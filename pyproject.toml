@@ -5,7 +5,7 @@ description = "PPO en ALE/Frogger-v5 (Gymnasium Atari): entorno, evaluacion y he
 requires-python = ">=3.11,<3.14"
 dependencies = [
     "ale-py==0.12.1",  # newest available on PyPI; bundles the ROMs inside the wheel
-    "gymnasium>=1.0,<2",
+    "gymnasium[mujoco]>=1.0,<2",
     "stable-baselines3==2.9.0",
     "torch",
     "numpy",
