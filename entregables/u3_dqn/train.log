@@ -1,0 +1,27 @@
+A.L.E: Arcade Learning Environment (version 0.12.1+8a8fafb)
+[Powered by Stella]
+DQN ALE/Frogger-v5 device=cpu steps=200000 buffer=20000 actions=5 obs=(4, 84, 84) uint8
+step 10000/200000 eps=0.944 updates=2000 episodes=38 recent_return=9.60 loss=0.0142 279.7 steps/s
+step 20000/200000 eps=0.887 updates=4500 episodes=77 recent_return=11.00 loss=0.0177 247.5 steps/s
+step 30000/200000 eps=0.831 updates=7000 episodes=117 recent_return=9.60 loss=0.0237 243.8 steps/s
+step 40000/200000 eps=0.775 updates=9500 episodes=158 recent_return=9.60 loss=0.0302 238.3 steps/s
+step 50000/200000 eps=0.719 updates=12000 episodes=200 recent_return=10.80 loss=0.0337 232.2 steps/s
+step 60000/200000 eps=0.662 updates=14500 episodes=240 recent_return=9.80 loss=0.0320 232.0 steps/s
+step 70000/200000 eps=0.606 updates=17000 episodes=280 recent_return=10.00 loss=0.0294 230.8 steps/s
+step 80000/200000 eps=0.550 updates=19500 episodes=319 recent_return=10.60 loss=0.0302 228.8 steps/s
+step 90000/200000 eps=0.494 updates=22000 episodes=358 recent_return=13.00 loss=0.0295 226.8 steps/s
+step 100000/200000 eps=0.438 updates=24500 episodes=397 recent_return=10.40 loss=0.0309 225.8 steps/s
+step 110000/200000 eps=0.381 updates=27000 episodes=437 recent_return=13.40 loss=0.0324 224.1 steps/s
+step 120000/200000 eps=0.325 updates=29500 episodes=475 recent_return=13.80 loss=0.0334 222.7 steps/s
+step 130000/200000 eps=0.269 updates=32000 episodes=513 recent_return=15.40 loss=0.0352 221.8 steps/s
+step 140000/200000 eps=0.213 updates=34500 episodes=549 recent_return=17.60 loss=0.0373 221.2 steps/s
+step 150000/200000 eps=0.156 updates=37000 episodes=585 recent_return=12.00 loss=0.0355 220.5 steps/s
+step 160000/200000 eps=0.100 updates=39500 episodes=621 recent_return=15.00 loss=0.0365 219.6 steps/s
+step 170000/200000 eps=0.100 updates=42000 episodes=656 recent_return=14.40 loss=0.0332 219.0 steps/s
+step 180000/200000 eps=0.100 updates=44500 episodes=692 recent_return=17.60 loss=0.0372 218.7 steps/s
+step 190000/200000 eps=0.100 updates=47000 episodes=726 recent_return=17.00 loss=0.0374 218.3 steps/s
+step 200000/200000 eps=0.100 updates=49500 episodes=761 recent_return=17.40 loss=0.0408 217.3 steps/s
+evaluando política greedy y baseline aleatorio...
+eval greedy mean=20.100 random mean=10.100 delta=10.000
+listo en 927.6s updates=49500 max_delta=0.462654 -> entregables/u3_dqn
+EXIT:0

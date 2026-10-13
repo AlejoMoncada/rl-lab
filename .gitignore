@@ -14,3 +14,9 @@ results/
 logs/
 models/
 videos/
+
+# Checkpoint completo (redes + Adam). q_network.pt sí se versiona.
+checkpoint.pt
+
+# Zip de PPO (~20 MB). La curva y comparison.json sí se versionan.
+entregables/u4_ppo/model.zip

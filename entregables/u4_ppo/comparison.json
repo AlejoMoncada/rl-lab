@@ -1,0 +1,645 @@
+{
+  "experiment": {
+    "smoke": false,
+    "requested_timesteps": 100000,
+    "actual_timesteps": 100352,
+    "optimizer_updates": 6272,
+    "max_parameter_delta": 0.1954565793275833,
+    "algorithm": "PPO",
+    "policy": "CnnPolicy",
+    "hyperparameters": {
+      "n_steps": 512,
+      "batch_size": 64,
+      "n_epochs": 4,
+      "learning_rate": 0.00025,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_range": 0.2,
+      "ent_coef": 0.01,
+      "vf_coef": 0.5
+    },
+    "device": "cpu",
+    "train_seed": 2026,
+    "random_baseline_seed": 424242,
+    "eval_episodes": 20,
+    "eval_seeds": [
+      777001,
+      777002,
+      777003,
+      777004,
+      777005,
+      777006,
+      777007,
+      777008,
+      777009,
+      777010,
+      777011,
+      777012,
+      777013,
+      777014,
+      777015,
+      777016,
+      777017,
+      777018,
+      777019,
+      777020
+    ],
+    "eval_cap_agent_steps": 2700
+  },
+  "environment": {
+    "env_id": "ALE/Frogger-v5",
+    "action_names": [
+      "NOOP",
+      "UP",
+      "RIGHT",
+      "LEFT",
+      "DOWN"
+    ],
+    "obs_shape": [
+      4,
+      84,
+      84
+    ],
+    "base_frameskip": 1,
+    "sticky_action_probability": 0.25,
+    "preprocess_frame_skip": 4,
+    "screen_size": 84,
+    "grayscale_obs": true,
+    "scale_obs": false,
+    "terminal_on_life_loss": false,
+    "stack_size": 4,
+    "reward_clipping": false,
+    "reward_shaping": false
+  },
+  "runtime_versions": {
+    "python": "3.12.3",
+    "python_executable": "/workspace/.venv/bin/python",
+    "numpy": "2.5.3",
+    "torch": "2.14.1+cpu",
+    "gymnasium": "1.3.0",
+    "ale_py": "0.12.1",
+    "stable_baselines3": "2.9.0",
+    "imageio": "2.38.0",
+    "matplotlib": "3.11.2"
+  },
+  "evaluations": {
+    "random": {
+      "env_id": "ALE/Frogger-v5",
+      "policy": "random",
+      "max_episode_steps": 2700,
+      "random_seed": 424242,
+      "num_episodes": 20,
+      "metrics": {
+        "n": 20,
+        "return": {
+          "mean": 9.1,
+          "std": 1.7291616465790582,
+          "min": 6.0,
+          "max": 12.0
+        },
+        "length": {
+          "mean": 274.3,
+          "std": 36.112463222549636,
+          "min": 222.0,
+          "max": 367.0
+        },
+        "terminated_count": 20,
+        "truncated_count": 0
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 777001,
+          "return": 11.0,
+          "length": 268,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 2,
+          "seed": 777002,
+          "return": 10.0,
+          "length": 307,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 3,
+          "seed": 777003,
+          "return": 8.0,
+          "length": 245,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 4,
+          "seed": 777004,
+          "return": 10.0,
+          "length": 303,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 5,
+          "seed": 777005,
+          "return": 6.0,
+          "length": 234,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 6,
+          "seed": 777006,
+          "return": 11.0,
+          "length": 367,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 7,
+          "seed": 777007,
+          "return": 9.0,
+          "length": 259,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 8,
+          "seed": 777008,
+          "return": 12.0,
+          "length": 295,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 9,
+          "seed": 777009,
+          "return": 11.0,
+          "length": 292,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 10,
+          "seed": 777010,
+          "return": 9.0,
+          "length": 267,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 11,
+          "seed": 777011,
+          "return": 7.0,
+          "length": 329,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 12,
+          "seed": 777012,
+          "return": 10.0,
+          "length": 255,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 13,
+          "seed": 777013,
+          "return": 11.0,
+          "length": 303,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 14,
+          "seed": 777014,
+          "return": 8.0,
+          "length": 273,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 15,
+          "seed": 777015,
+          "return": 6.0,
+          "length": 236,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 16,
+          "seed": 777016,
+          "return": 10.0,
+          "length": 222,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 17,
+          "seed": 777017,
+          "return": 10.0,
+          "length": 284,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 18,
+          "seed": 777018,
+          "return": 7.0,
+          "length": 282,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 19,
+          "seed": 777019,
+          "return": 8.0,
+          "length": 234,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 20,
+          "seed": 777020,
+          "return": 8.0,
+          "length": 231,
+          "terminated": true,
+          "truncated": false
+        }
+      ]
+    },
+    "ppo_before_learn": {
+      "env_id": "ALE/Frogger-v5",
+      "policy": "predict",
+      "max_episode_steps": 2700,
+      "random_seed": null,
+      "num_episodes": 20,
+      "metrics": {
+        "n": 20,
+        "return": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "length": {
+          "mean": 2554.55,
+          "std": 2.2017038856304,
+          "min": 2551.0,
+          "max": 2558.0
+        },
+        "terminated_count": 20,
+        "truncated_count": 0
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 777001,
+          "return": 0.0,
+          "length": 2553,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 2,
+          "seed": 777002,
+          "return": 0.0,
+          "length": 2552,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 3,
+          "seed": 777003,
+          "return": 0.0,
+          "length": 2552,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 4,
+          "seed": 777004,
+          "return": 0.0,
+          "length": 2555,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 5,
+          "seed": 777005,
+          "return": 0.0,
+          "length": 2556,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 6,
+          "seed": 777006,
+          "return": 0.0,
+          "length": 2556,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 7,
+          "seed": 777007,
+          "return": 0.0,
+          "length": 2553,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 8,
+          "seed": 777008,
+          "return": 0.0,
+          "length": 2558,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 9,
+          "seed": 777009,
+          "return": 0.0,
+          "length": 2556,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 10,
+          "seed": 777010,
+          "return": 0.0,
+          "length": 2552,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 11,
+          "seed": 777011,
+          "return": 0.0,
+          "length": 2553,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 12,
+          "seed": 777012,
+          "return": 0.0,
+          "length": 2551,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 13,
+          "seed": 777013,
+          "return": 0.0,
+          "length": 2554,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 14,
+          "seed": 777014,
+          "return": 0.0,
+          "length": 2555,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 15,
+          "seed": 777015,
+          "return": 0.0,
+          "length": 2552,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 16,
+          "seed": 777016,
+          "return": 0.0,
+          "length": 2556,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 17,
+          "seed": 777017,
+          "return": 0.0,
+          "length": 2554,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 18,
+          "seed": 777018,
+          "return": 0.0,
+          "length": 2557,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 19,
+          "seed": 777019,
+          "return": 0.0,
+          "length": 2558,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 20,
+          "seed": 777020,
+          "return": 0.0,
+          "length": 2558,
+          "terminated": true,
+          "truncated": false
+        }
+      ]
+    },
+    "ppo_after_learn": {
+      "env_id": "ALE/Frogger-v5",
+      "policy": "predict",
+      "max_episode_steps": 2700,
+      "random_seed": null,
+      "num_episodes": 20,
+      "metrics": {
+        "n": 20,
+        "return": {
+          "mean": 9.2,
+          "std": 0.6000000000000001,
+          "min": 9.0,
+          "max": 11.0
+        },
+        "length": {
+          "mean": 620.65,
+          "std": 47.66159355288071,
+          "min": 601.0,
+          "max": 765.0
+        },
+        "terminated_count": 20,
+        "truncated_count": 0
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 777001,
+          "return": 9.0,
+          "length": 603,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 2,
+          "seed": 777002,
+          "return": 9.0,
+          "length": 603,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 3,
+          "seed": 777003,
+          "return": 11.0,
+          "length": 762,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 4,
+          "seed": 777004,
+          "return": 9.0,
+          "length": 605,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 5,
+          "seed": 777005,
+          "return": 9.0,
+          "length": 606,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 6,
+          "seed": 777006,
+          "return": 9.0,
+          "length": 606,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 7,
+          "seed": 777007,
+          "return": 9.0,
+          "length": 603,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 8,
+          "seed": 777008,
+          "return": 9.0,
+          "length": 608,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 9,
+          "seed": 777009,
+          "return": 9.0,
+          "length": 606,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 10,
+          "seed": 777010,
+          "return": 9.0,
+          "length": 603,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 11,
+          "seed": 777011,
+          "return": 9.0,
+          "length": 603,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 12,
+          "seed": 777012,
+          "return": 9.0,
+          "length": 601,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 13,
+          "seed": 777013,
+          "return": 9.0,
+          "length": 604,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 14,
+          "seed": 777014,
+          "return": 11.0,
+          "length": 765,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 15,
+          "seed": 777015,
+          "return": 9.0,
+          "length": 602,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 16,
+          "seed": 777016,
+          "return": 9.0,
+          "length": 606,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 17,
+          "seed": 777017,
+          "return": 9.0,
+          "length": 604,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 18,
+          "seed": 777018,
+          "return": 9.0,
+          "length": 607,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 19,
+          "seed": 777019,
+          "return": 9.0,
+          "length": 608,
+          "terminated": true,
+          "truncated": false
+        },
+        {
+          "episode": 20,
+          "seed": 777020,
+          "return": 9.0,
+          "length": 608,
+          "terminated": true,
+          "truncated": false
+        }
+      ]
+    }
+  }
+}

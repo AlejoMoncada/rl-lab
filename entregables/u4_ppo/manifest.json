@@ -1,0 +1,31 @@
+{
+  "output_root": "/workspace/entregables/u4_ppo",
+  "smoke": false,
+  "requested_timesteps": 100000,
+  "actual_timesteps": 100352,
+  "completed_episodes_training": 412,
+  "reload_matches": true,
+  "optimizer_updates": 6272,
+  "max_parameter_delta": 0.1954565793275833,
+  "gif_frames": 120,
+  "runtime": {
+    "python": "3.12.3",
+    "python_executable": "/workspace/.venv/bin/python",
+    "numpy": "2.5.3",
+    "torch": "2.14.1+cpu",
+    "gymnasium": "1.3.0",
+    "ale_py": "0.12.1",
+    "stable_baselines3": "2.9.0",
+    "imageio": "2.38.0",
+    "matplotlib": "3.11.2"
+  },
+  "artifacts": {
+    "model_zip": "/workspace/entregables/u4_ppo/model.zip",
+    "curve_csv": "/workspace/entregables/u4_ppo/curve.csv",
+    "curve_png": "/workspace/entregables/u4_ppo/curve.png",
+    "comparison_json": "/workspace/entregables/u4_ppo/comparison.json",
+    "comparison_csv": "/workspace/entregables/u4_ppo/comparison.csv",
+    "gif": "/workspace/entregables/u4_ppo/episodio_ppo.gif"
+  },
+  "manifest_json": "/workspace/entregables/u4_ppo/manifest.json"
+}
