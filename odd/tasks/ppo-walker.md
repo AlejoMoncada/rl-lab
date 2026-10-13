@@ -22,7 +22,7 @@ Objective: replace the Frogger PPO deliverable with a reproducible SB3 PPO exper
 | T1 | S1, S2 | delegated (Haiku) | done (superseded by T1b) | 9cc960c |
 | T1b | S1, S2 | delegated (Haiku): walker_rl, shapes (17,)/(6,) | done: 8 walker + 21 frogger tests OK | 9cc960c |
 | T2 | S3–S9 | delegated (Haiku) | done: 4 notebook tests OK (smoke ~40 s) | see git log |
-| T3 | S10 | delegated (Haiku, user instruction) | pending | |
+| T3 | S10 | delegated (Haiku) | done | see git log |
 | T4 | S3–S5 full 1M run | delegated (Haiku), needs user go-ahead (long CPU run) | pending | |
 
 ## Log
